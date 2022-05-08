@@ -1,8 +1,7 @@
 import { Avatar, Button, Checkbox, FormControlLabel, Grid, Link, Paper, TextField, Typography } from "@material-ui/core";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import React from "react";
-import { Route } from "react-router-dom";
-import Register from "./register";
+import {Link as RouterLink} from "react-router-dom";
 
 const Login = () => {
     
@@ -32,12 +31,14 @@ const Login = () => {
                         />} 
                         label="Remember me" />
                 <Button type = "submit" color="primary" variant = "contained" style={btnStyle} fullWidth>Sign in</Button>
-                <Typography>
-                    <Link href="#"> forgot password?</Link>
-                </Typography>
-                <Typography>  Do you have an account? 
-                    <Link> Sign Up</Link>
-                </Typography>
+                    <Typography>
+                        <Link component={RouterLink} to="#"> forgot password?</Link>
+                    </Typography>
+                    <Typography>  Do you have an account? 
+                        <Link component={RouterLink} to="/signup"> Sign Up</Link>
+                        
+                    </Typography>
+     
             </Paper>
         </Grid>
     )
