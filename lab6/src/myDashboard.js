@@ -57,7 +57,7 @@ const saveButtonClicked = async () => {
 
 
             }
-            <div>
+            {/* <div>
             <NewProduct
                 n = {newProductState.name}
                 p = {newProductState.price} 
@@ -66,7 +66,7 @@ const saveButtonClicked = async () => {
             >
 
             </NewProduct>
-            </div>
+            </div> */}
         </div>
 
     );

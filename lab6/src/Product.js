@@ -7,7 +7,7 @@ function CreateProduct(props) {
             <div>
                 <h1>
                     Name : {props.name}
-                    Price:  {props.price}
+                     <tr></tr> Price:  {props.price}
                 </h1>
             </div>
 
